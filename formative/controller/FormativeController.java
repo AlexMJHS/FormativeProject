@@ -8,32 +8,32 @@ package formative.controller;
  */
 public class FormativeController
 {
-	
-	
+	private FormativeView myDisplay;
+	private Formativebot myBot;
+	private FormativeFrame baseFrame;
 	
 	public FormativeController()
 	{
-		
+		myDisplay = new FormativeView();
+		String userName = myDisplay.grabAnswer("What is your name?");
+		baseFrame = new FormativeFrame(this);
 	}
 	
 	public void start()
 	{
-		
+		myDisplay.showResponse("Hello " + myBot.getUserName());
+		chat();
 	}
 	
-	private void chat()
+	public String major(String schoolMajor)
 	{
-		
-	}
-	
-	public String userToChatBot(String conversation)
-	{
-		
+		myDisplay
 	}
 	
 	private void shutDown()
 	{
-		
+		myDisplay.showResponse("Goodbye " + myBot.getUserName());
+		System.exit(0);
 	}
 	
 	public Chatbot getChatbot()
