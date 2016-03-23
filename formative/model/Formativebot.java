@@ -12,8 +12,6 @@ public class Formativebot
 	public Formativebot(String userName)
 	{
 		this.userName = userName;
-		this.schoolYear = schoolYear;
-		this.schoolMajor = schoolMajor;
 	}
 	
 	

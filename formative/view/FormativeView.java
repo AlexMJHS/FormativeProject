@@ -6,7 +6,7 @@ public class FormativeView
 {
 	private String windowMessage;
 	
-	public ChatView()
+	public FormativeView()
 	{
 		windowMessage = "Hello";
 	}
@@ -19,7 +19,7 @@ public class FormativeView
 	public String grabAnswer(String popupText)
 	{
 		String answer = "";
-		answer = JOption.showInputDialog(null, popupText, windowMessage, JOption.PLAIN_MESSAGE, null, "Answer here").toString();
+		answer = JOptionPane.showInputDialog(null, popupText, windowMessage, JOptionPane.PLAIN_MESSAGE, null, "Answer here").toString();
 		return answer;
 	}
 }
